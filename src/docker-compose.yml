@@ -1,0 +1,15 @@
+services:
+ catalogdb:
+  image: postgres
+
+  
+
+ catalog.api:
+   image: ${DOCKER_REGISTRY-}catalogapi
+   build:
+     context: .
+     dockerfile: services/Catalog/Catalog.API/Dockerfile
+
+volumes:
+  postgres_catalog:
+
