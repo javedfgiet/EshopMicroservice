@@ -10,6 +10,8 @@ services:
  distributedCache:
   image: redis
 
+ orderdb:
+  image: mcr.microsoft.com/mssql/server
   
 
  catalog.api:
