@@ -55,7 +55,7 @@ namespace Ordering.Infrastructure.Data.Migrations
                     b.HasIndex("Email")
                         .IsUnique();
 
-                    b.ToTable("Customer");
+                    b.ToTable("Customers");
                 });
 
             modelBuilder.Entity("Ordering.Domain.Models.Order", b =>
