@@ -1,3 +1,4 @@
+name: Minute Time Echo
 on:
     schedule:
         - cron:  '*/1 * * * *'
