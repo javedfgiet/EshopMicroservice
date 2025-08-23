@@ -1,0 +1,21 @@
+name: Multi Event Echo
+on:
+    push: 
+        branches: 
+            - main
+            - dev
+    pull_request: 
+        branches: 
+            - main
+jobs:
+    helloworld:
+        runs-on: ubuntu-latest
+        steps:
+         - name: "Echo Basic Information"
+           run: |
+            echo "REF: $GITHUB_REF"
+            echo "JOBID: $GITHUB_JOB"
+            echo "GITHUB ACTION: $GITHUB_ACTION"
+            echo "ACTOR : $GITHUB_ACTOR"
+
+
