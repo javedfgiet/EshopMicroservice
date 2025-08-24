@@ -12,7 +12,7 @@ on:
         required: true
         type: string
       data:
-        description: 'Base64 Encoded content of a file'
+        description: 'Base64 Encoded File'
         required: true
         type: string
 
